@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{systeme}
+\usepackage[spanish]{babel}
+
+\title{Álgebra Lineal 2020-4\\ Tarea 3}
+\date{ }
+
+\begin{document}
+
+\maketitle
+Estos son los enunciados para la tarea en equipo. Debes entregar la tarea con todas las indicaciones precisadas en Moodle.
+
+\begin{enumerate}
+    \item Aplica el proceso de Gram-Schmidt a la base de $\mathbb{R}^4$ que consiste de los vectores $(1,0,0,0)$, $(1,1,0,0)$, $(1,1,1,0)$ y $(1,1,1,1)$. Expresa a $(1,2,3,4)$ como combinación lineal de la base ortonormal que obtengas.
+    \item Sean $r_0<r_1<r_2<\ldots<r_n$ números reales. Para cada $i$, considera la forma lineal $\text{ev}_{r_i}:\mathbb{R}_n[x]\to \mathbb{R}$ que a cada polinomio $p(x)$ lo manda a su evaluación en $r_i$, es decir, $$\text{ev}_{r_i}(p(x))=p(r_i).$$
+    
+    Muestra que $\text{ev}_{r_0},\text{ev}_{r_1},\ldots, \text{ev}_{r_n}$ forman una base del espacio dual  $(\mathbb{R}_n[x])^{\ast}$.
+    \item Demuestra que si $\alpha_1,\ldots,\alpha_n$ son reales y $l_1,l_2,l_3$ son formas lineales en $\mathbb{R}^3$, entonces la función $$q(x)=\alpha_1l_1(x)l_2(x)+\alpha_2l_2(x)l_3(x)+\alpha_3 l_3(x)l_1(x)$$ es una forma cuadrática. Encuentra su forma polar.
+    
+    \item Considera $V=\mathbb{R}_3[x]$ el espacio vectorial de polinomios con coeficientes reales y grado a lo más $3$. Definimos $$\langle p,q \rangle = \sum_{j=1}^5 p(j)q(j).$$
+    
+    \begin{enumerate}
+        \item Muestra que $\langle \cdot, \cdot \rangle$ así definido es un producto interior.
+        \item Encuentra el ángulo entre los polinomios $1+x^3$ y $3x-2x^2$.
+        \item Para cada entero positivo $n$, determina la norma del polinomio $1+nx^3$.
+        \item Determina la distancia entre los polinomios $1$ y $1+x+x^2+x^3$.
+    \end{enumerate}
+    \item Sea $f:[0,1]\to \mathbb{R}^+$ una función continua que no toma valores negativos y sea $$x_n=\int_0 ^1 t^n f(t)\, dt.$$
+    Demuestra que para cualesquiera $n,p\geq 0$ se tiene que 
+    $$x_{n+p}\leq \sqrt{x_{2n}}\cdot \sqrt{x_{2p}}.$$ \textbf{Sugerencia:} Define un producto interior sobre el cual puedas usar la desigualdad de Cauchy-Schwarz.
+\end{enumerate}
+
+\end{document}
